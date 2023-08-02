@@ -14,7 +14,8 @@ If doing a lot of development, clean-up dangling images with
 docker image prune
 ```
 
-To export the image, use:
+To build an image for another architecutre, and export to file:
 ```
-docker save --output kanji-ninja.tar kanji-ninja
+docker buildx build --platform=linux/amd64 -t kanji-ninja:latest-amd64 .
+docker save --output kanji-ninja-amd64.tar kanji-ninja:latest-amd64
 ```
