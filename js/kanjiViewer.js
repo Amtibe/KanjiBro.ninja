@@ -75,7 +75,7 @@ KanjiViewer = {
       var paper = this.paper;
       jQuery.ajax({
         url:
-          "https://cdn.jsdelivr.net/gh/KanjiVG/kanjivg/kanji/0" +
+          "/img/kanjivg/kanji/0" +
           this.kanji.charCodeAt(0).toString(16) +
           ".svg",
         dataType: "xml",
